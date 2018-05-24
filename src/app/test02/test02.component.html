@@ -1,0 +1,13 @@
+<h3> Component 02</h3>
+
+<button (click)="filterFlag = true">Sort</button>
+<ul>
+    <li *ngFor="let item of ls.dataService | order01 :filterFlag  ">{{item.name}}</li>
+
+
+
+</ul>
+
+<button (click)="addItem()">Add Item</button>
+
+<button (click)="addFilter()">Add Filter</button>

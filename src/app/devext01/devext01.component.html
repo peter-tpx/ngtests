@@ -1,0 +1,33 @@
+<div>
+    <h3>Dev</h3>
+
+    <div class="dx-field custom-height-slider">
+        <div class="dx-field-label">With labels</div>
+        <div class="dx-field-value">
+            <dx-range-slider #yieldRangeSlider 
+            [showRange]="rangeSliderYield.showRange" [min]="rangeSliderYield.min" [max]="rangeSliderYield.max" [start]="rangeSliderYield.start" [end]="rangeSliderYield.end" [tooltip]="rangeSliderYield.tooltip" (onValueChanged)="rangeSliderYield.onValueChanged($event)">
+
+
+
+
+                <!-- [showRange]="rangeSliderYield.showRange" [min]="rangeSliderYield.min" [max]="rangeSliderYield.max" [start]="rangeSliderYield.start"
+[end]="rangeSliderYield.end" [label]="rangeSliderYield.label" [tooltip]="rangeSliderYield.tooltip"
+(onValueChanged)="rangeSliderYield.onValueChanged($event)" -->
+
+
+
+
+
+
+            </dx-range-slider>
+
+            <h4>x={{yieldRangeSlider.start}}, y={{yieldRangeSlider.end}}</h4>
+
+            <h5>On Value Changed: {{selectedValue[0]}} - {{selectedValue[1]}}</h5>
+
+        </div>
+
+
+    </div>
+
+</div>

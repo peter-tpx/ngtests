@@ -1,0 +1,19 @@
+<div id="foundationTest">
+    Foundation test ....
+
+    <ul id="accordionSelectors" class="accordion hide-mobile" data-accordion data-multi-expand="true" data-allow-all-closed="true">
+        <li class="accordion-item margin-bottom-no" data-accordion-item>
+            <a href="#couponSelector" class="accordion-title  padding-top padding-bottom border-top">Coupon type</a>
+            <div id="couponSelector" class="accordion-content" data-tab-content>
+
+                <label *ngFor="let coupon of datalist" for="chkSector_{{coupon}}" class="filter">
+
+        <input id="chkSector_{{coupon}}" type="checkbox" name="filter" ng-model="filterCoupon[coupon]" ng-click="filterChanged()">
+        <span class="checkmark"></span>
+         {{coupon}} </label>
+                <!-- <span ng-repeat="sector in bondSectors"> {{sector}}<input type="checkbox" name="filter" id="filter" ng-model="filterSector[sector]"></input></span> -->
+            </div>
+        </li>
+    </ul>
+
+</div>
